@@ -1,10 +1,19 @@
 fun main() {
+    val colorauto = object : color {
+        override var color = "negro"
+    }
     val motor = motor(
-        "V",
-        6,
-        240)
-    var StellaArtois = auto(motor,ruedas(200),puertas("negro"))
+            "V",
+            6,
+            240)
 
-    StellaArtois.atributosauto()
+
+    val stellaArtois = auto(
+            motor,
+            ruedas(200),
+            puertas(colorauto)
+    )
+
+    stellaArtois.atributosauto()
 
 }

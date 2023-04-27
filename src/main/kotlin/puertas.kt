@@ -1,2 +1,2 @@
-class puertas(var color:String) {
+class puertas(var color:color) {
 }
